@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-01-21T18:43:58.617731",
+  "total_tests": 6,
+  "passed_tests": 3,
+  "success_rate": "50.0%",
+  "results": [
+    {
+      "test": "API Root Endpoint",
+      "success": true,
+      "details": "Status: 200, Message: Missing Child Detection System API",
+      "timestamp": "2026-01-21T18:43:55.365992"
+    },
+    {
+      "test": "Register Missing Child",
+      "success": false,
+      "details": "Status: 400, Error: No face detected in image",
+      "timestamp": "2026-01-21T18:43:58.402112"
+    },
+    {
+      "test": "Search Missing Child (With Match)",
+      "success": false,
+      "details": "Status: 400, Error: No face detected in image",
+      "timestamp": "2026-01-21T18:43:58.474527"
+    },
+    {
+      "test": "Search Missing Child (No Match)",
+      "success": false,
+      "details": "Status: 400, Error: No face detected in image",
+      "timestamp": "2026-01-21T18:43:58.518527"
+    },
+    {
+      "test": "List Missing Children",
+      "success": true,
+      "details": "Status: 200, Success: True, Count: 0",
+      "timestamp": "2026-01-21T18:43:58.578577"
+    },
+    {
+      "test": "Invalid Image Upload (No Face)",
+      "success": true,
+      "details": "Status: 400, Error: No face detected in image",
+      "timestamp": "2026-01-21T18:43:58.616840"
+    }
+  ]
+}

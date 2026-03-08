@@ -1,0 +1,152 @@
+{
+  "project_name": "Missing Child Detection System (MVP)",
+  "design_philosophy": {
+    "persona": "E1: The Anti-AI Designer",
+    "core_concept": "The Digital Beacon",
+    "emotional_tone": "Hopeful, Trustworthy, Urgent, Safe",
+    "visual_style": "Organic & Earthy (Archetype 1) mixed with Vibrant Play",
+    "theme_mode": "light",
+    "key_principle": "Fusion over Imitation: Mix 'Community App' warmth with 'Emergency Response' clarity."
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Outfit, sans-serif"
+    },
+    "installation": "Import from Google Fonts: https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Outfit:wght@300;400;500;700&display=swap",
+    "usage_rules": {
+      "headings": "font-extrabold tracking-tight text-stone-900",
+      "subheadings": "font-semibold tracking-normal text-stone-600",
+      "body": "font-normal leading-relaxed text-stone-700",
+      "labels": "uppercase tracking-widest text-xs font-bold text-stone-500"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Hope Amber",
+        "hex": "#F59E0B",
+        "tailwind": "amber-500",
+        "usage": "Primary CTAs, Highlights, 'Found' status"
+      },
+      "secondary": {
+        "name": "Safety Teal",
+        "hex": "#0D9488",
+        "tailwind": "teal-600",
+        "usage": "Secondary buttons, Trust badges, Success states"
+      },
+      "background": {
+        "name": "Warm Paper",
+        "hex": "#FAFAF9",
+        "tailwind": "stone-50",
+        "usage": "Main background"
+      },
+      "surface": {
+        "name": "Clean Card",
+        "hex": "#FFFFFF",
+        "tailwind": "white",
+        "usage": "Cards, Form containers"
+      },
+      "text": {
+        "primary": "#1C1917",
+        "secondary": "#57534E",
+        "muted": "#A8A29E"
+      },
+      "alert": {
+        "name": "Urgent Coral",
+        "hex": "#F43F5E",
+        "tailwind": "rose-500",
+        "usage": "Error states, 'Missing' status tags"
+      }
+    },
+    "gradients": {
+      "hero_glow": "bg-gradient-to-br from-amber-100 via-stone-50 to-teal-50",
+      "button_gradient": "bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600"
+    }
+  },
+  "layout_and_spacing": {
+    "container_width": "max-w-6xl mx-auto px-6 md:px-12",
+    "section_spacing": "py-20 md:py-32",
+    "grid_system": "Mode A: The Tetris Grid (Asymmetric)",
+    "border_radius": {
+      "cards": "rounded-2xl",
+      "buttons": "rounded-full",
+      "inputs": "rounded-xl"
+    },
+    "shadows": {
+      "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "floating": "shadow-[0_20px_50px_rgb(0,0,0,0.1)]",
+      "inner": "shadow-inner"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "h-12 px-8 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1",
+      "secondary": "h-12 px-8 bg-white border-2 border-stone-200 text-stone-700 font-bold rounded-full hover:border-stone-400 hover:bg-stone-50 transition-all",
+      "ghost": "text-stone-500 hover:text-stone-900 font-medium hover:bg-stone-100 rounded-lg px-4 py-2"
+    },
+    "cards": {
+      "base": "bg-white rounded-2xl border border-stone-100 p-8 shadow-sm hover:shadow-md transition-shadow duration-300",
+      "missing_child": "relative overflow-hidden bg-white rounded-3xl border-2 border-stone-100 hover:border-amber-200 transition-all group"
+    },
+    "inputs": {
+      "base": "h-14 bg-stone-50 border-2 border-stone-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 rounded-xl px-4 text-lg transition-all placeholder:text-stone-400"
+    },
+    "badges": {
+      "missing": "bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider",
+      "found": "bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider",
+      "confidence": "bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-bold"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use a subtle noise texture overlay on the main background (opacity 0.03) to reduce digital flatness.",
+    "blobs": "Place large, blurred (blur-3xl) colored orbs (amber-200, teal-200) behind the main hero section to create a 'warm glow'.",
+    "icons": "Use 'Lucide React' icons. Style them with `stroke-width={2.5}` for a friendly, robust look.",
+    "glassmorphism": "Use `backdrop-blur-xl bg-white/70 border border-white/50` for sticky headers and floating search bars."
+  },
+  "image_assets": {
+    "hero_main": {
+      "url": "https://images.pexels.com/photos/8033865/pexels-photo-8033865.jpeg",
+      "alt": "Happy diverse children playing in a park",
+      "usage": "Hero section background or main visual"
+    },
+    "community_support": {
+      "url": "https://images.pexels.com/photos/6646926/pexels-photo-6646926.jpeg",
+      "alt": "Community members helping each other",
+      "usage": "About section or 'How it works' visual"
+    },
+    "background_texture": {
+      "url": "https://images.pexels.com/photos/7937284/pexels-photo-7937284.jpeg",
+      "alt": "Safe suburban neighborhood street",
+      "usage": "Subtle background for footer or call-to-action section (use with heavy overlay)"
+    }
+  },
+  "page_specific_guidelines": {
+    "home": {
+      "layout": "Split Hero or Centered Focus. Two massive cards: 'I have seen a child' (Search) vs 'I lost a child' (Register).",
+      "visuals": "Use the 'Hero Glow' gradient. Make the 'Search' action the most prominent element."
+    },
+    "register": {
+      "layout": "Single column, focused form. Remove distractions. Use a 'Progress Bar' if multi-step.",
+      "tone": "Calm, supportive. Use micro-copy like 'We are here to help' instead of just 'Submit'."
+    },
+    "search": {
+      "layout": "Drag and drop zone must be large and friendly. Use an illustration or icon of a camera/photo.",
+      "results": "Grid layout. If match found: Highlight with Green/Teal. If no match: Gentle grey state with 'Report to authorities' fallback."
+    }
+  },
+  "accessibility_checklist": {
+    "contrast": "Ensure Amber-500 text is not used on white backgrounds (too low contrast). Use Amber-600 or Stone-900 for text.",
+    "focus_states": "Visible focus rings (ring-4 ring-amber-200) are mandatory.",
+    "labels": "All inputs must have visible labels. No placeholder-only inputs."
+  },
+  "universal_guidelines_for_main_agent": [
+    "DO NOT use dark mode. Force light mode in tailwind config if needed.",
+    "Use 'Manrope' for all headings. Import it in index.css.",
+    "Use 'sonner' for notifications (e.g., 'Image uploaded successfully').",
+    "Add `data-testid` to all interactive elements.",
+    "Avoid sharp corners. Use `rounded-2xl` minimum for containers.",
+    "Use the provided image URLs. Do not use placeholders.",
+    "Make the 'Upload' area feel like a 'Safe Drop Zone' - use dashed borders with warm colors."
+  ]
+}
