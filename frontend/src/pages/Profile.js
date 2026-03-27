@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { User as UserIcon, Mail, Calendar, Trash2, Edit, Search, CheckCircle, XCircle, Loader2 } from "lucide-react";
 import axios from "axios";
@@ -14,11 +14,7 @@ const Profile = () => {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("children");
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     try {
       const headers = {
         Authorization: `Bearer ${token}`,
@@ -37,7 +33,11 @@ const Profile = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [token]);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
   const handleDelete = async (childId) => {
     if (!window.confirm("Are you sure you want to delete this record?")) {
